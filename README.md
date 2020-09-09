@@ -165,6 +165,7 @@ It might also be helpful to know how to measure the amount of water that is avai
 
 ## Competition
 While I had hoped for a slightly higher score, it is important to keep in mind that the **BEST** score was only aroun 0.80 - and this competition included data scientists from around the world, both amature and experienced coders alike!
+
 ![](https://raw.githubusercontent.com/twhipple/dsc-mod-3-project-v2-1/master/Images/Submission_score.png)
 
 *My score from the DataDriven Competition*
