@@ -1,11 +1,25 @@
-# Flatiron Mod 3 V2.1 Final Project
+# Pump-It-Up Competition Model
 
 
-## Classification Model
+## Flatiron Mod 3 V2.1 Final Project
+
+
+## README Outline
+* Introduction 
+* Project Summary
+* Repo Contents
+* Prerequisites
+* Feature and Definitions
+* Results
+* Future Work
+* Built With, Contributors, Authors, Acknowledgments
+
+
+## Introduction - A Classification Model
 The main goal of this project is to demonstrate the skills we have learned in Module 3 that revolve around machine learning and the building of a classification model. I chose a dataset that would allow me to preprocess, explore it, and then build a classification model that allows me to interpret the original question. 
 
 
-## Summary
+## Project Summary
 The best overall model was the simple Random Forest with criterion='entropy' and all rows with missing values deleted. This model was able to predict water-points with 0.8144 accuracy and had similar values for precision and recall.
 
 GridSearch was able to improve my basic XGBBoost model to 0.8103 along with extensive cleaning of the data. The large percentage of categorical data columns, at least a third of which were repetitive or overlapping, made it difficult to sort through and decide on features that were most relevant. As well, the multiple continuous features that contained either a high percentage of zeros or more missing data made many of these features also unusable or irrelevant.
@@ -13,7 +27,29 @@ GridSearch was able to improve my basic XGBBoost model to 0.8103 along with exte
 While it might be a waste of time and resources to visit a possibly non-functioning water-point only to find that it was in fact still working - I believe it is better to error on the side of having too many false positives as opposed to letting people go without a safe drinking water source.
 
 
-## Contents
+## Libraries & Prerequisites
+These are the libraries that I used in this project.
+* numpy as np
+* pandas as pd
+* matplotlib.pyplot as plt
+* %matplotlib inline
+* seaborn as sns
+* folium
+* datetime as dt
+* from sklearn.model_selection import train_test_split 
+* from sklearn.model_selection import cross_val_score
+* from sklearn.model_selection import GridSearchCV
+* from sklearn.metrics import accuracy_score 
+* from sklearn.metrics import f1_score 
+* from sklearn.metrics import confusion_matrix 
+* from sklearn.metrics import classification_report
+* from sklearn.metrics import confusion_matrix
+* from sklearn.linear_model import LogisticRegression
+* from sklearn.ensemble import RandomForestClassifier
+* import xgboost as xgb
+
+
+## Repo Contents
 This repo contains the following:
 * README.md - this is where you are now!
 * Final_Notebook.ipynb - the Jupyter Notebook containing the finalized code for this project.
@@ -29,6 +65,7 @@ This repo contains the following:
 * mod_3_project_rubric - a review of the highlighted features for this Flatiron project
 * mod_3_project_slideshow pdf 
  (slideshow link https://docs.google.com/presentation/d/1hGLtq9iZbrOJ6ii0f5pA6VmMGeQmwfmN5voG5W2CLqU/edit?usp=sharing)
+* Images - all images.
 
 
 ## Feature and Definitions
@@ -72,6 +109,7 @@ source_class - The source of the water
 waterpoint_type - The kind of waterpoint
 waterpoint_type_group - The kind of waterpoint
 
+
 ## Conclusion
 My research found that payment types of 'monthly', 'annually', and 'per bucket' were the most efficient - which makes sense compared to 'free' or 'unknown' potable water! Obviously, waterpoints with a payment system were less likely to need repair.
 
@@ -90,28 +128,6 @@ Any data that points to when a water-point was last serviced or replaced as well
 A more regulated collection of information and more precise entry of specific data is needed (water-point age, certain types, number of people using, etc.) in addition to a more standard set of options - such that location, payment, and source could be standardized, thus eliminating much of the missing data.
 
 It might also be helpful to know how to measure the amount of water that is available - the 'amount_tsh' feature seems like it could be very useful but this information would need to be clearly measured as well as the method specifically described in detail.
-
-
-## Prerequisites
-These are the libraries that I used in this project.
-* numpy as np
-* pandas as pd
-* matplotlib.pyplot as plt
-* %matplotlib inline
-* seaborn as sns
-* folium
-* datetime as dt
-* from sklearn.model_selection import train_test_split 
-* from sklearn.model_selection import cross_val_score
-* from sklearn.model_selection import GridSearchCV
-* from sklearn.metrics import accuracy_score 
-* from sklearn.metrics import f1_score 
-* from sklearn.metrics import confusion_matrix 
-* from sklearn.metrics import classification_report
-* from sklearn.metrics import confusion_matrix
-* from sklearn.linear_model import LogisticRegression
-* from sklearn.ensemble import RandomForestClassifier
-* import xgboost as xgb
 
 
 ## Built With:
