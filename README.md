@@ -3,6 +3,7 @@
 ![](https://raw.githubusercontent.com/twhipple/dsc-mod-3-project-v2-1/master/Images/water-1227680_1280.jpg)
  *A old waterpump has found a new flow in data science, Source: MoreLight, Pixbay.com*
 
+
 ## Flatiron Mod 3 V2.1 Final Project
 
 
@@ -25,12 +26,14 @@ The main goal of this project is to demonstrate the skills we have learned in Mo
 *Tanzanian Flag - I had to do some research on the country in order to help make my plan.*
 
 
+
 ## Project Summary
 The best overall model was the simple Random Forest with criterion='entropy' and all rows with missing values deleted. This model was able to predict water-points with 0.8144 accuracy and had similar values for precision and recall.
 
 ![](https://raw.githubusercontent.com/twhipple/dsc-mod-3-project-v2-1/master/Images/Waterpoint_Status.png)
 
 *A brief look at all the Training Data waterpoints*
+
 
 GridSearch was able to improve my basic XGBBoost model to 0.8103 along with extensive cleaning of the data. The large percentage of categorical data columns, at least a third of which were repetitive or overlapping, made it difficult to sort through and decide on features that were most relevant. As well, the multiple continuous features that contained either a high percentage of zeros or more missing data made many of these features also unusable or irrelevant.
 
@@ -163,11 +166,13 @@ It might also be helpful to know how to measure the amount of water that is avai
 ## Competition
 While I had hoped for a slightly higher score, it is important to keep in mind that the **BEST** score was only aroun 0.80 - and this competition included data scientists from around the world, both amature and experienced coders alike!
 ![](https://raw.githubusercontent.com/twhipple/dsc-mod-3-project-v2-1/master/Images/Submission_score.png)
- *My score from the DataDriven Competition*
+
+*My score from the DataDriven Competition*
 
 
 ![](https://raw.githubusercontent.com/twhipple/dsc-mod-3-project-v2-1/master/Images/kenya-africa-1-1365025-1279x874.jpg)
- *The Serengeti - a dry place without much water! Source: Dave Dyet, FreeImages.com*
+ 
+*The Serengeti - a dry place without much water! Source: Dave Dyet, FreeImages.com*
 
 
 ## Built With:
