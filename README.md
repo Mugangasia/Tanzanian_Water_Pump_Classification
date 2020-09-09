@@ -19,7 +19,9 @@
 
 
 ## Introduction - A Classification Model
-The main goal of this project is to demonstrate the skills we have learned in Module 3 that revolve around machine learning and the building of a classification model. I chose a dataset that would allow me to preprocess, explore it, and then build a classification model that allows me to interpret the original question. 
+The main goal of this project is to demonstrate the skills we have learned in Module 3 that revolve around machine learning and the building of a classification model. I chose a dataset from the DataDriven competition website that would allow me to preprocess, explore, and then build a classification model. 
+
+Using data from Taarifa and the Tanzanian Ministry of Water, I was trying to predict which water pumps were functional, which need some repairs, and which didn't work at all? This is an intermediate-level practice competition from the DataDriven website. An  understanding of which waterpoints will fail can improve maintenance operations and ensure that clean, potable water is available to communities across Tanzania.
 
 ![](https://raw.githubusercontent.com/twhipple/dsc-mod-3-project-v2-1/master/Images/tanzania-flag-small.png)
 
@@ -81,6 +83,11 @@ This repo contains the following:
 * Images - all images.
 
 
+![](https://raw.githubusercontent.com/twhipple/dsc-mod-3-project-v2-1/master/Images/kenya-africa-1-1365025-1279x874.jpg)
+ 
+*The Serengeti - a dry place without much water! Source: Dave Dyet, FreeImages.com*
+
+
 ## Feature and Definitions
 - amount_tsh - Total static head (amount water available to waterpoint)
 - date_recorded - The date the row was entered
@@ -124,8 +131,8 @@ This repo contains the following:
 
 
 ## Models
-These are the models that I used in this project.
-#### Logarithmic
+These are the models that I used in this project:
+#### LogisticRegression
 #### Random Forest
 #### Random Forest with Grid Search
 #### XGBoost
@@ -164,16 +171,11 @@ It might also be helpful to know how to measure the amount of water that is avai
 
 
 ## Competition
-While I had hoped for a slightly higher score, it is important to keep in mind that the **BEST** score was only aroun 0.80 - and this competition included data scientists from around the world, both amature and experienced coders alike!
+While I had hoped for a slightly higher score, it is important to keep in mind that the **BEST** score was only around 0.82 - and this competition included data scientists from around the world, both amature and experienced coders alike! Considering I got a validation score around 0.8144 I was surprised to see that my competition score went down.
 
 ![](https://raw.githubusercontent.com/twhipple/dsc-mod-3-project-v2-1/master/Images/Submission_score.png)
 
 *My score from the DataDriven Competition*
-
-
-![](https://raw.githubusercontent.com/twhipple/dsc-mod-3-project-v2-1/master/Images/kenya-africa-1-1365025-1279x874.jpg)
- 
-*The Serengeti - a dry place without much water! Source: Dave Dyet, FreeImages.com*
 
 
 ## Built With:
