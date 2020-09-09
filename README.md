@@ -1,5 +1,7 @@
 # Pump-It-Up Competition Model
 
+![](https://raw.githubusercontent.com/twhipple/dsc-mod-3-project-v2-1/master/Images/water-1227680_1280.jpg)
+*A old waterpump has found some a new flow in data science, Source: MoreLight, Pixbay.com*
 
 ## Flatiron Mod 3 V2.1 Final Project
 
@@ -18,13 +20,22 @@
 ## Introduction - A Classification Model
 The main goal of this project is to demonstrate the skills we have learned in Module 3 that revolve around machine learning and the building of a classification model. I chose a dataset that would allow me to preprocess, explore it, and then build a classification model that allows me to interpret the original question. 
 
+![](https://raw.githubusercontent.com/twhipple/dsc-mod-3-project-v2-1/master/Images/tanzania-flag-small.png)
+*Tanzanian Flag - I had to do some research on the country in order to help make my plan.*
+
 
 ## Project Summary
 The best overall model was the simple Random Forest with criterion='entropy' and all rows with missing values deleted. This model was able to predict water-points with 0.8144 accuracy and had similar values for precision and recall.
 
+![](https://raw.githubusercontent.com/twhipple/dsc-mod-3-project-v2-1/master/Images/Waterpoint_Status.png)
+*A brief look at all the Training Data waterpoints*
+
 GridSearch was able to improve my basic XGBBoost model to 0.8103 along with extensive cleaning of the data. The large percentage of categorical data columns, at least a third of which were repetitive or overlapping, made it difficult to sort through and decide on features that were most relevant. As well, the multiple continuous features that contained either a high percentage of zeros or more missing data made many of these features also unusable or irrelevant.
 
 While it might be a waste of time and resources to visit a possibly non-functioning water-point only to find that it was in fact still working - I believe it is better to error on the side of having too many false positives as opposed to letting people go without a safe drinking water source.
+
+![](https://raw.githubusercontent.com/twhipple/dsc-mod-3-project-v2-1/master/Images/kenya-africa-1-1365025-1279x874.jpg)
+*The Serengeti - a dry place without much water! Source: Dave Dyet, FreeImages.com*
 
 
 ## Libraries & Prerequisites
@@ -110,10 +121,28 @@ This repo contains the following:
 - waterpoint_type_group - The kind of waterpoint
 
 
+## Models
+> Logarithmic
+> Random Forest
+
+![](https://raw.githubusercontent.com/twhipple/dsc-mod-3-project-v2-1/master/Images/Feature_Importance.png)
+*I used feature importance to help me guide my research and model building*
+
+> Random Forest with Grid Search
+> XGBoost
+
+
+
 ## Conclusion
 My research found that payment types of 'monthly', 'annually', and 'per bucket' were the most efficient - which makes sense compared to 'free' or 'unknown' potable water! Obviously, waterpoints with a payment system were less likely to need repair.
 
+![](https://raw.githubusercontent.com/twhipple/dsc-mod-3-project-v2-1/master/Images/Basin_Status.png)
+*Bar graph of Waterpoint Status by Basin*
+
 'Hand-pumps' and 'standpipes' were the most likely extraction types to remain functional. Therefore, the replacement of any of the broken or non-functioning wells should be converted to a more durable and dependable source if possible.
+
+![](https://raw.githubusercontent.com/twhipple/dsc-mod-3-project-v2-1/master/Images/Waterpoint_Basin.png)
+*Horizontal bar graph of all the different basins*
 
 All models seem to point toward location as a highly valuable aspect of determining water-point status. While certain 'Water Basins' were more likely to have a higher percentage of either non-functioning water sources or water-points in need of repair, there is evidence that this could also be based on the regions' climate, amount of rainfall, population, and economic development.
 
@@ -128,6 +157,13 @@ Any data that points to when a water-point was last serviced or replaced as well
 A more regulated collection of information and more precise entry of specific data is needed (water-point age, certain types, number of people using, etc.) in addition to a more standard set of options - such that location, payment, and source could be standardized, thus eliminating much of the missing data.
 
 It might also be helpful to know how to measure the amount of water that is available - the 'amount_tsh' feature seems like it could be very useful but this information would need to be clearly measured as well as the method specifically described in detail.
+
+
+## Competition
+While I had hoped for a slightly higher score, it is important to keep in mind that the **BEST** score was only aroun 0.80 - and this competition included data scientists from around the world, both amature and experienced coders alike!
+![](https://raw.githubusercontent.com/twhipple/dsc-mod-3-project-v2-1/master/Images/Submission_score.png)
+*My score from the DataDriven Competition*
+
 
 
 ## Built With:
